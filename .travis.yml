@@ -24,7 +24,7 @@ after_script:
   - cd ./public
   - touch README.md
   - git init
-  - git config user.name "HWYWL"
+  - git config user.name "zzh1994"
   - git config user.email "294109830@qq.com"
   - git add .
   - git commit -m "Travis CI 自动化构建 :$(date '+%Y-%m-%d %H:%M:%S' -d '+8 hour')"
@@ -36,4 +36,4 @@ branches:
     - hexo
 env:
  global:
-   - GH_REF: github.com/HWYWL/HWYWL.github.io
+   - GH_REF: github.com/zzh1994/Sean.github.io
