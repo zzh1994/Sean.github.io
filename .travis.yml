@@ -5,6 +5,7 @@ node_js: stable
 #   directories:
 #     - node_modules # 要缓存的文件夹
 
+
 # S: Build Lifecycle
 # before_script:
 #   - npm install hexo-cli -g
