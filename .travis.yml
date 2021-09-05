@@ -1,0 +1,39 @@
+language: node_js
+node_js: stable
+
+# cache:
+#   directories:
+#     - node_modules # 要缓存的文件夹
+
+# S: Build Lifecycle
+# before_script:
+#   - npm install hexo-cli -g
+#   - git clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/Butterfly
+
+install:
+  - npm install
+  - npm install hexo-deployer-git --save
+  - npm install hexo-wordcount --save or yarn add hexo-wordcount
+  - npm install hexo-renderer-pug hexo-renderer-stylus --save
+
+script:
+  - hexo clean
+  - hexo g
+
+after_script:
+  - cd ./public
+  - touch README.md
+  - git init
+  - git config user.name "HWYWL"
+  - git config user.email "294109830@qq.com"
+  - git add .
+  - git commit -m "Travis CI 自动化构建 :$(date '+%Y-%m-%d %H:%M:%S' -d '+8 hour')"
+  - git push --force --quiet "https://${travis}@${GH_REF}" master:master
+# E: Build LifeCycle
+
+branches:
+  only:
+    - hexo
+env:
+ global:
+   - GH_REF: github.com/HWYWL/HWYWL.github.io
