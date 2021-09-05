@@ -3,7 +3,7 @@ title: 相册
 date: 2020-02-26 19:25:25
 ---
 
-[comment]: <> (<div class="gallery-group-main">)
+<div class="gallery-group-main">
 
 [comment]: <> ({% galleryGroup '壁紙' '收藏的一些壁紙' '/gallery/wallpaper' https://i.loli.net/2019/11/10/T7Mu8Aod3egmC4Q.png %})
 
@@ -13,4 +13,4 @@ date: 2020-02-26 19:25:25
 
 [comment]: <> ({% galleryGroup '画画' '我家妹子的游戏原画' '/gallery/cg' https://hwy-figure-bed.oss-cn-hangzhou.aliyuncs.com/image/20200706104231.jpg %})
 
-[comment]: <> (</div>)
+</div>
