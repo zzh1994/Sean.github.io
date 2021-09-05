@@ -1,2 +1,2 @@
-# HWYWL.github.io
+# Sean.github.io
 个人博客
