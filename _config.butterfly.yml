@@ -339,6 +339,7 @@ valine:
   appKey: 6MKEO1bI6tgCaeu6QcYBPKpi # leancloud application app key
   pageSize: 10 # comment list page size
   avatar: monsterid # gravatar style https://valine.js.org/#/avatar
+  avatar_cdn: https://dn-qiniu-avatar.qbox.me/avatar/
   lang: zh-CN # i18n: zh-CN/zh-TW/en/ja
   placeholder: 来都来了，不留下个脚印吗 # valine comment input placeholder (like: Please leave your footprints)
   guest_info: nick,mail,link # valine comment header info (nick/mail/link)
